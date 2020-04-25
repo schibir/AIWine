@@ -17,7 +17,7 @@ public:
 	{
 		memset(table, 0, sizeof(table));
 		hashKey = 0;
-		srand(time(NULL));
+		srand(static_cast<uint32_t>(time(nullptr)));
 		for (int i = 0; i < 2048; i++)
 		{
 			hashVal[i] = Rand64();
